@@ -1,7 +1,10 @@
+import dotenv from 'dotenv'
+dotenv.config()
+
 import pg from 'pg';
 const { Client } = pg;
 const client = new Client({
-   connectionString: 'postgresql://neondb_owner:npg_m84THAwUnNjy@ep-dark-morning-ag1gq36i-pooler.c-2.eu-central-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require&uselibpqcompat=true'
+   connectionString: `postgresql://${process.env.DATABASE_NAME}:${process.env.DATABASE_PASSWORD}@${process.env.DATABASE_HOST}?sslmode=require&channel_binding=require&uselibpqcompat=true`
 });
 
 async function getData() {
@@ -12,3 +15,4 @@ async function getData() {
 }
 
 getData()
+console.log(  )
