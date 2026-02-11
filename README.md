@@ -1,7 +1,4 @@
 # connect to db
-### project short description
-
+### Project short description
 ### how to install
-```
-    npm install
-``` 
+```nmp install```
