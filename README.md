@@ -1,5 +1,5 @@
 # Connect to database
-Simple Node.js example that demonstrates how to connect to a PostgreSQL database using the pg library and environment variables via dotenv.
+### Simple Node.js example that demonstrates how to connect to a PostgreSQL database using the pg library and environment variables via dotenv.
 ---
 # Start
 ## nmp install
